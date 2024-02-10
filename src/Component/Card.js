@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Card.css";
 import SubCard from "./SubCard";
 import Api from "./Api";
