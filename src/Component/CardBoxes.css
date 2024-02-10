@@ -1,0 +1,29 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0%;
+  margin: 0%;
+}
+
+.size_div {
+  margin: 20px 200px 0px 0px;
+}
+
+.size_div .box1 {
+  padding: 3px;
+  margin: 7px;
+  width: 50px;
+  border-radius: 5px;
+}
+.text:before {
+  content: "";
+  margin-left: -10px;
+}
+
+.color_div {
+  margin: -97px 2px 0px 0px;
+}
+.color_div .box2 {
+  padding: 3px;
+  margin: 7px;
+  border-radius: 5px;
+}
