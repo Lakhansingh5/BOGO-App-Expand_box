@@ -2,8 +2,10 @@ import React from "react";
 import "./CardBoxes.css";
 
 const CardBoxes = () => {
+
+  
   return (
-    <div className="main_div">
+    <div className="std_div">
       <div className="size_div">
         <h3>Size</h3>
         <span className="text">#1</span>
@@ -15,14 +17,12 @@ const CardBoxes = () => {
 
         <br />
         <span className="text">#2</span>
-
         <select className="box1">
           <option value="0"> S</option>
           <option value="1">M</option>
           <option value="2">L</option>
         </select>
       </div>
-
       <div className="color_div">
         <h3>Color</h3>
 

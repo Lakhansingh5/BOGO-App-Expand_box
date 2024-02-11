@@ -1,36 +1,55 @@
 * {
   font-family: "Poppins", sans-serif;
-  padding: 0%;
   margin: 0;
+  padding: 0;
+}
+
+.main_div {
+  width: 110vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .head_body {
-  width: 50%;
-  height: 100%;
-  align-items: center;
-  margin: 1% 30%;
-  justify-content: centre;
-  text-align: center;
-  background-color: whitesmoke;
-  box-sizing: border-box;
-  border: 1px solid gray;
+  width: 100%;
+  display: grid;
+  background: white;
+  border: 2px solid gray;
   position: relative;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-    rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.body {
+  height: auto;
+  width: 90%;
+  margin: 25px 30px 0px 30px;
+  background: #fc6585;
+  border: 1px solid rgb(255, 249, 249);
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.05) 0px 1px 20px;
+  position: relative;
+  font-size: 16px;
+  display: grid;
 }
 
 h1 {
-  margin: 10px auto;
   color: #fc6585;
   text-align: center;
   font-size: 30px;
   max-width: 600px;
   position: relative;
+  margin-top: 30px;
 }
 h1:before {
   content: "";
   display: block;
-  width: 150px;
+  width: 80px;
   height: 2px;
   background: lightgray;
   left: 30px;
@@ -40,7 +59,7 @@ h1:before {
 h1:after {
   content: "";
   display: block;
-  width: 150px;
+  width: 80px;
   height: 2px;
   background: lightgray;
   right: 30px;
@@ -49,11 +68,10 @@ h1:after {
 }
 
 .body fieldset {
-  width: 120px;
+  width: 100px;
   height: 20px;
-  margin-left: 300px;
-  margin-top: -10px;
-  margin-bottom: -20px;
+  left: 250px;
+  position: relative;
   border: none;
   padding: 3px;
   font-size: 13px;
@@ -66,76 +84,65 @@ h1:after {
     rgba(17, 17, 26, 0.05) 0px 1px 20px;
 }
 
-.body {
-  width: 75%;
-  max-height: auto;
-  align-items: center;
-  margin: 5% 12%;
-  justify-content: centre;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-  box-sizing: border-box;
-  border: 1px solid rgb(255, 249, 249);
-  border-radius: 20px;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-    rgba(17, 17, 26, 0.05) 0px 1px 20px;
-
-  position: relative;
-  font-size: 16px;
-}
-
 .content {
   display: flex;
   flex-direction: row;
-  margin: 0px 0px 0px 20px;
-  padding-top: 30px;
+  margin: 20px 0px 0px 20px;
+}
+
+.content .radio1 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  letter-spacing: 1px;
 }
 
 .content h2 {
   margin-left: 20px;
-}
-.content p {
-  margin: 50px 10px 20px -60px;
-  color: gray;
-  font-size: 14px;
-}
-.content p2 {
-  background-color: #fc6585;
-  color: #fff;
-  border-radius: 8px;
-  margin: 3px 12px 0px -12px;
-  height: 23px;
-  width: 80px;
+  font-size: 20px;
 }
 
-.content input {
-  margin-top: -60px;
-  color: #fc6585;
-  cursor: pointer;
+.content p {
+  margin: 30px 0px 10px 35px;
+  color: gray;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
+.content p2 {
+  font-size: 14px;
+  background-color: #fc6585;
+  color: #fff;
+  border-radius: 6px;
+  height: 18px;
+  width: 55px;
+  margin-left: 100px;
+  position: absolute;
+}
+
 .dollar {
   display: grid;
   margin-left: 100px;
-  margin-top: 3px;
 }
+
+.dollar p3 {
+  margin-right: 30px;
+}
+
 .dollar p4 {
-  font-size: small;
+  font-size: 12px;
   text-decoration: line-through;
   color: rgb(185, 185, 185);
-  margin: -25px 0px 0px -15px;
+  margin: -15px 0px 0px -50px;
 }
 
 .footer {
   display: flex;
   justify-content: center;
-  margin: 0px 0px 20px 0px;
+  margin: 20px 0px 10px 0px;
 }
 .footer p {
   color: #fc6585;
-  margin-right: 180px;
-}
-.footer p2 {
-  margin-right: 20px;
+  margin-right: 150px;
 }
 
 .footer2 {
@@ -146,8 +153,8 @@ h1:after {
 .footer2 button {
   font-size: 16px;
   cursor: pointer;
-  height: 30px;
-  width: 450px;
+  height: 35px;
+  width: 400px;
   justify-content: center;
   text-align: center;
   align-items: center;
